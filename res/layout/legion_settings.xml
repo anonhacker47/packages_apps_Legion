@@ -27,18 +27,6 @@
 				android:scaleType="centerCrop" >
 			</ImageView>
 			
-			<View
-				android:id="@+id/imageBack"
-				android:layout_width="40dp"
-				android:layout_height="40dp"
-				android:contentDescription="@string/legion_settings_title"
-				android:padding="1dp"
-				android:layout_marginTop="16dp"
-				android:layout_marginStart="16dp"
-				app:layout_constraintStart_toStartOf="@id/imageHeader"
-				app:layout_constraintTop_toTopOf="@id/imageHeader">
-			</View>
-
 			<ImageView
 				android:id="@+id/Logo"
 				android:layout_width="130dp"
@@ -46,7 +34,7 @@
 				android:contentDescription="@string/legion_settings_title"
 				android:padding="1dp"
 				android:src="@drawable/legion"
-				android:layout_marginTop="28dp"
+				android:layout_marginTop="25dp"
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintTop_toTopOf="@id/imageHeader"
 				app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +48,7 @@
 				android:textAlignment="center"
 				android:text="@string/legion_settings_title"
 				android:textColor="@android:color/white"
-				android:layout_marginTop="10dp"
+				android:layout_marginTop="5dp"
 				android:textStyle="bold"
 				app:layout_constraintTop_toBottomOf="@id/Logo"
 				android:textSize="25sp" >
@@ -70,7 +58,7 @@
 				android:layout_width="1dp"
 				android:layout_height="1dp"
 				android:id="@+id/ViewSupport"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="13dp"
         app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintBottom_toBottomOf="@id/imageHeader"
 				android:layout_marginBottom="15dp" >
@@ -98,8 +86,8 @@
 					tools:ignore="UseCompoundDrawables">
 
           <com.airbnb.lottie.LottieAnimationView					
-						android:layout_width="55dp"
-						android:layout_height="55dp"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
 						android:paddingTop="5dp"
             android:elevation="18dp"
 						android:contentDescription="@string/legion_settings_title"
@@ -115,7 +103,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:gravity="center"
-						android:paddingTop="25dp"
+						android:paddingTop="30dp"
 						android:text="@string/quicksettings_title"
 						android:textColor="?android:attr/textColorPrimary"
 						android:textSize="18sp"
@@ -145,8 +133,8 @@
 					android:padding="15dp">
 
 					<com.airbnb.lottie.LottieAnimationView
-						android:layout_width="55dp"
-						android:layout_height="55dp"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
 						android:contentDescription="@string/legion_settings_title"
 						android:paddingTop="5dp"
             android:elevation="18dp"            
@@ -163,7 +151,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:gravity="center"
-						android:paddingTop="25dp"
+						android:paddingTop="30dp"
 						android:text="@string/statusbar_title"
 						android:textColor="?android:attr/textColorPrimary"
 						android:textSize="18sp"
@@ -580,8 +568,8 @@
 					tools:ignore="UseCompoundDrawables">
 
          <com.airbnb.lottie.LottieAnimationView
-						android:layout_width="55dp"
-						android:layout_height="55dp"
+						android:layout_width="65dp"
+						android:layout_height="65dp"
 						android:paddingTop="5dp"
             android:elevation="18dp"                                        
 						android:scaleType="fitXY"
@@ -596,7 +584,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:gravity="center"
-						android:paddingTop="25dp"
+						android:paddingTop="15dp"
 						android:text="@string/miscsettings_title"
 						android:textColor="?android:attr/textColorPrimary"
 						android:textSize="18sp"

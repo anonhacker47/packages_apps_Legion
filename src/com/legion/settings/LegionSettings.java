@@ -59,28 +59,29 @@ import com.legion.settings.fragments.PowerMenuSettings;
 import com.legion.settings.fragments.AnimationSettings;
 import com.legion.settings.fragments.MiscSettings;
 import com.legion.settings.fragments.About;
+import com.legion.settings.utils.LUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class LegionSettings extends SettingsPreferenceFragment implements View.OnClickListener {
+public class LegionSettings extends SettingsPreferenceFragment implements View.OnClickListener{
 
-    MaterialCardView mlegionqsCard;
-    MaterialCardView mlegionstCard;
-    MaterialCardView mlegionthemesCard;
-    MaterialCardView mlegionlockscreenCard;
-    MaterialCardView mlegionnotificationCard;
-    MaterialCardView mlegiongestureCard;
-    MaterialCardView mlegionnavbarCard;
-    MaterialCardView mlegionbuttonCard;
-    MaterialCardView mlegionpowermenuCard;
-    MaterialCardView mlegionanimationCard;
-    MaterialCardView mlegionmiscCard;	
-	MaterialCardView mlegionaboutCard;	
+     MaterialCardView mlegionqsCard;
+     MaterialCardView mlegionstCard;
+     MaterialCardView mlegionthemesCard;
+     MaterialCardView mlegionlockscreenCard;
+     MaterialCardView mlegionnotificationCard;
+     MaterialCardView mlegiongestureCard;
+     MaterialCardView mlegionnavbarCard;
+     MaterialCardView mlegionbuttonCard;
+     MaterialCardView mlegionpowermenuCard;
+     MaterialCardView mlegionanimationCard;
+     MaterialCardView mlegionmiscCard;
+     MaterialCardView mlegionaboutCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.legion_settings, container, false);
+       return inflater.inflate(R.layout.legion_settings, container, false);
     }
 
     @Override
@@ -137,8 +138,7 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction.replace(this.getId(), qsfragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
-               }
-            if (id == R.id.legionst_card)
+            } else if (id == R.id.legionst_card)
               {
                 StatusBarSettings statusbarfragment = new StatusBarSettings();
                 FragmentTransaction transaction1 = getFragmentManager().beginTransaction();
@@ -146,8 +146,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction1.replace(this.getId(), statusbarfragment);
                 transaction1.addToBackStack(null);
                 transaction1.commit();
-              }
-            if (id == R.id.legionthemes_card)
+              
+            } else if (id == R.id.legionthemes_card)
               {
                Themes themesfragment = new Themes();
                 FragmentTransaction transaction2 = getFragmentManager().beginTransaction();
@@ -155,8 +155,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction2.replace(this.getId(), themesfragment);
                 transaction2.addToBackStack(null);
                 transaction2.commit();
-               }
-            if (id == R.id.legionlockscreen_card)
+               
+            } else if (id == R.id.legionlockscreen_card)
               {
                 LockScreenSettings lockscreenfragment = new LockScreenSettings();
                 FragmentTransaction transaction3 = getFragmentManager().beginTransaction();
@@ -164,8 +164,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction3.replace(this.getId(), lockscreenfragment);
                 transaction3.addToBackStack(null);
                 transaction3.commit();
-               }
-            if (id == R.id.legionnotification_card)
+               
+            } else if (id == R.id.legionnotification_card)
               {
                 NotificationsSettings notificationfragment = new NotificationsSettings();
                 FragmentTransaction transaction4 = getFragmentManager().beginTransaction();
@@ -173,8 +173,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction4.replace(this.getId(), notificationfragment);
                 transaction4.addToBackStack(null);
                 transaction4.commit();
-              }
-            if (id == R.id.legiongesture_card)
+              
+            } else if (id == R.id.legiongesture_card)
               {
                 GestureSettings gesturefragment = new GestureSettings();
                 FragmentTransaction transaction5 = getFragmentManager().beginTransaction();
@@ -182,8 +182,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction5.replace(this.getId(), gesturefragment);
                 transaction5.addToBackStack(null);
                 transaction5.commit();
-               }
-            if (id == R.id.legionnavbar_card)
+               
+            } else if (id == R.id.legionnavbar_card)
               {
                 NavigationBarSettings navbarfragment = new NavigationBarSettings();
                 FragmentTransaction transaction6 = getFragmentManager().beginTransaction();
@@ -191,8 +191,8 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction6.replace(this.getId(), navbarfragment);
                 transaction6.addToBackStack(null);
                 transaction6.commit();
-               }
-            if (id == R.id.legionbutton_card)
+               
+            } else if (id == R.id.legionbutton_card)
               {
                 ButtonSettings buttonfragment = new ButtonSettings();
                 FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
@@ -200,76 +200,52 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
                 transaction7.replace(this.getId(), buttonfragment);
                 transaction7.addToBackStack(null);
                 transaction7.commit();
-               }
-            if (id == R.id.legionpowermenu_card)
+               
+            } else if (id == R.id.legionpowermenu_card)
               {
                 PowerMenuSettings powermenufragment = new PowerMenuSettings();
-                FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
-                transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction7.replace(this.getId(), powermenufragment);
-                transaction7.addToBackStack(null);
-                transaction7.commit();
-               }
-            if (id == R.id.legionanimation_card)
+                FragmentTransaction transaction8 = getFragmentManager().beginTransaction();
+                transaction8.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction8.replace(this.getId(), powermenufragment);
+                transaction8.addToBackStack(null);
+                transaction8.commit();
+               
+            } else if (id == R.id.legionanimation_card)
               {
                 AnimationSettings animationfragment = new AnimationSettings();
-                FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
-                transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction7.replace(this.getId(), animationfragment);
-                transaction7.addToBackStack(null);
-                transaction7.commit();
-               }
-            if (id == R.id.legionmisc_card)
+                FragmentTransaction transaction9 = getFragmentManager().beginTransaction();
+                transaction9.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction9.replace(this.getId(), animationfragment);
+                transaction9.addToBackStack(null);
+                transaction9.commit();
+               
+            } else if (id == R.id.legionmisc_card)
               {
                 MiscSettings miscfragment = new MiscSettings();
-                FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
-                transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction7.replace(this.getId(), miscfragment);
-                transaction7.addToBackStack(null);
-                transaction7.commit();
-               }
-            if (id == R.id.legionabout_card)
+                FragmentTransaction transaction10 = getFragmentManager().beginTransaction();
+                transaction10.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction10.replace(this.getId(), miscfragment);
+                transaction10.addToBackStack(null);
+                transaction10.commit();
+               
+            } else if (id == R.id.legionabout_card)
               {
                 About aboutfragment = new About();
-                FragmentTransaction transaction7 = getFragmentManager().beginTransaction();
-                transaction7.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction7.replace(this.getId(), aboutfragment);
-                transaction7.addToBackStack(null);
-                transaction7.commit();
-               }			   
+                FragmentTransaction transaction11 = getFragmentManager().beginTransaction();
+                transaction11.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction11.replace(this.getId(), aboutfragment);
+                transaction11.addToBackStack(null);
+                transaction11.commit();
+              } 
         }
-        
-    @Override           
+
+    @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.LEGION_SETTINGS;
     }
-
-    public static void lockCurrentOrientation(Activity activity) {
-        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
-        int orientation = activity.getResources().getConfiguration().orientation;
-        int frozenRotation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
-        switch (currentRotation) {
-            case Surface.ROTATION_0:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-                break;
-            case Surface.ROTATION_90:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-                break;
-            case Surface.ROTATION_180:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
-                break;
-            case Surface.ROTATION_270:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
-                break;
-        }
-        activity.setRequestedOrientation(frozenRotation);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
     }
 }
