@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Surface;
 import android.preference.Preference;
@@ -86,6 +87,7 @@ public class LegionSettings extends SettingsPreferenceFragment implements View.O
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 		    getActivity().getActionBar().hide();
+                    getActivity().getWindow().setStatusBarColor(Color.TRANSPARENT);
 
         mlegionqsCard = (MaterialCardView) view.findViewById(R.id.legionqs_card);
         mlegionqsCard.setOnClickListener(this);

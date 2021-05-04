@@ -32,6 +32,7 @@ public class NotificationsSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        getActivity().getActionBar();
 
         ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.legion_settings_notifications);

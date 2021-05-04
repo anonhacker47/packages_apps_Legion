@@ -27,6 +27,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        getActivity().getActionBar();
 
         addPreferencesFromResource(R.xml.legion_settings_statusbar);
     }

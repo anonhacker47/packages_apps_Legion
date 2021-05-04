@@ -54,6 +54,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        getActivity().getActionBar();
         addPreferencesFromResource(R.xml.legion_settings_lockscreen);
 
         ContentResolver resolver = getActivity().getContentResolver();

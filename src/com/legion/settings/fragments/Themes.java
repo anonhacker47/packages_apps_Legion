@@ -104,6 +104,7 @@ public class Themes extends DashboardFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        getActivity().getActionBar();
 
 //        addPreferencesFromResource(R.xml.settings_themes);
         PreferenceScreen prefScreen = getPreferenceScreen();

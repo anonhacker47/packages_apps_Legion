@@ -69,6 +69,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getActivity().getActionBar();
         addPreferencesFromResource(R.xml.legion_settings_navigation);
         final PreferenceScreen prefScreen = getPreferenceScreen();
 

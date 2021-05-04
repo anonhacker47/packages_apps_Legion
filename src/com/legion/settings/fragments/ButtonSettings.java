@@ -83,6 +83,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        getActivity().getActionBar();
         addPreferencesFromResource(R.xml.legion_settings_button);
 
         final Resources res = getResources();
