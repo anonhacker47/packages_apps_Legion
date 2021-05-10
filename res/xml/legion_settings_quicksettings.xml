@@ -24,7 +24,7 @@
         android:title="@string/qs_datausage_title" 
         android:entries="@array/qs_datausage_entries"
         android:entryValues="@array/qs_datausage_values"
-        android:defaultValue="0" />
+        android:defaultValue="2" />
 
        <!-- QS Quick Pull Down -->
     <com.legion.settings.preferences.SecureSettingSwitchPreference
@@ -48,7 +48,7 @@
             android:key="qs_show_brightness_slider"
             android:title="@string/qs_show_brightness_slider_title"
             android:summary="@string/qs_show_brightness_slider_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
        <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="qs_show_brightness_slider_show_expanded"
@@ -66,7 +66,7 @@
             android:key="qs_brightness_position_bottom"
             android:title="@string/qs_brightness_position_bottom_title"
             android:summary="@string/qs_brightness_position_bottom_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         </PreferenceCategory>
 
