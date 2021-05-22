@@ -17,6 +17,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <Preference
+        android:key="lockscreen_header"
+        android:layout="@layout/lockscreen_header" />    
 
     <com.legion.settings.preferences.SecureSettingSwitchPreference
         android:key="lock_screen_transparent_notifications_enabled"

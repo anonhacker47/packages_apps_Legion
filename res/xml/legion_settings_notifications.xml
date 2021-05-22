@@ -18,6 +18,10 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="notification_header"
+        android:layout="@layout/notification_header" />
+
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"

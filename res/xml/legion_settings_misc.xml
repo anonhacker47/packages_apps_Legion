@@ -17,6 +17,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/miscsettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <Preference
+        android:key="misc_header"
+        android:layout="@layout/misc_header" />    
 
     <com.legion.settings.preferences.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"

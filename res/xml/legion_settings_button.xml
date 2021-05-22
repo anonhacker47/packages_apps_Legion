@@ -17,6 +17,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/button_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <Preference
+        android:key="buttons_header"
+        android:layout="@layout/buttons_header" />
 
     <PreferenceCategory
             android:key="volume_keys"

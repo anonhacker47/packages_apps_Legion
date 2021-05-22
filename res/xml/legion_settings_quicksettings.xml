@@ -18,6 +18,9 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="quicksettings_header"
+        android:layout="@layout/quicksettings_header" />
 
       <com.legion.settings.preferences.SystemSettingListPreference 
         android:key="qs_datausage" 

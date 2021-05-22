@@ -17,6 +17,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/powermenu_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <Preference
+        android:key="powermenu_header"
+        android:layout="@layout/powermenu_header" />    
 
     <ListPreference
         android:key="power_menu_animations"

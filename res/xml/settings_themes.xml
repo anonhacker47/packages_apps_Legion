@@ -15,8 +15,12 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/themes_color"
+        android:title=" "
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <Preference
+        android:key="themes_header"
+        android:layout="@layout/themes_header" />
 
     <ListPreference
         android:key="theme_switch"
