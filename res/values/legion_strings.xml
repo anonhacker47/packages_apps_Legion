@@ -48,7 +48,7 @@
     <string name="gesture_summary">Gesture Customizations</string>
     <string name="notifications_summary">Notifications and Incall settings</string>
     <string name="misc_summary">Miscellaneous things to be checked here</string>
-    <string name="ambient_summary">Ambient Display Customizations</string>
+    <string name="ambient_settings_summary">Ambient Display Customizations</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -948,6 +948,11 @@
     <string name="unit_milliseconds">milliseconds</string>
     <string name="unit_pixels">dp</string>
     
+        <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always on when charging</string>
+    <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
+
+   
     <!-- Ambient edge lighting -->
     <string name="pulse_ambient_light_category">Screen edge lighting</string>
     <string name="pulse_ambient_light_title">Edge lighting</string>
@@ -1006,7 +1011,5 @@
     <string name="ambient_notification_light_color_mode_custom">Custom color</string>
     <string name="ambient_notification_light_color_mode_wall">Wallpaper color</string>
     <string name="ambient_image_title">Ambient Image</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>    
     
 </resources>

@@ -23,7 +23,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 
-import com.xtended.fragments.XAmbientService;
+import com.legion.settings.fragments.XAmbientService;
 
 public final class DozeUtils {
 
