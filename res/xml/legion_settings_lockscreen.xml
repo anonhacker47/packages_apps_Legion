@@ -61,6 +61,12 @@
         android:summary="%s"
         android:defaultValue="1" />
 
+        <PreferenceScreen
+        android:key="ambient_display"
+        android:title="@string/ambient_settings_title"
+        android:summary="@string/ambient_settings_summary"
+        android:fragment="com.legion.settings.fragments.AmbientSettings" />
+
     <!-- Fingerprint customization options -->
 
     <PreferenceCategory
