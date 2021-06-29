@@ -75,7 +75,7 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
         // Lockscren Clock Fonts
         mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
         mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 34)));
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 28)));
         mLockClockFonts.setSummary(mLockClockFonts.getEntry());
         mLockClockFonts.setOnPreferenceChangeListener(this);
 
@@ -89,7 +89,7 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
         // Lockscren Date Fonts
         mLockDateFonts = (ListPreference) findPreference(LOCK_DATE_FONTS);
         mLockDateFonts.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.LOCK_DATE_FONTS, 32)));
+                getContentResolver(), Settings.System.LOCK_DATE_FONTS, 28)));
         mLockDateFonts.setSummary(mLockDateFonts.getEntry());
         mLockDateFonts.setOnPreferenceChangeListener(this);
 
@@ -103,7 +103,7 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
         // Lock Clock Size
         mClockFontSize = (CustomSeekBarPreference) findPreference(CLOCK_FONT_SIZE);
         mClockFontSize.setValue(Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKCLOCK_FONT_SIZE, 78));
+                Settings.System.LOCKCLOCK_FONT_SIZE, 95));
         mClockFontSize.setOnPreferenceChangeListener(this);
 
         // Custom Text Clock Size
@@ -115,7 +115,7 @@ public class LockscreenUi extends SettingsPreferenceFragment implements
         // Lock Date Size
         mDateFontSize = (CustomSeekBarPreference) findPreference(DATE_FONT_SIZE);
         mDateFontSize.setValue(Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKDATE_FONT_SIZE,18));
+                Settings.System.LOCKDATE_FONT_SIZE,25));
         mDateFontSize.setOnPreferenceChangeListener(this);
 
         // Lockscren OwnerInfo Size

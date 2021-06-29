@@ -37,7 +37,7 @@
         android:entries="@array/lock_clock_fonts_entries"
         android:entryValues="@array/lock_clock_fonts_values"
         android:summary="%s"
-        android:defaultValue="34"
+        android:defaultValue="28"
         android:persistent="false" />
 
     <com.legion.settings.preferences.CustomSeekBarPreference
@@ -47,7 +47,7 @@
         settings:min="65"
         settings:units="dp"
         android:persistent="false"
-        android:defaultValue="78" />
+        android:defaultValue="95" />
 
     <ListPreference
         android:key="custom_text_clock_fonts"
@@ -87,7 +87,7 @@
         android:entries="@array/lock_clock_fonts_entries"
         android:entryValues="@array/lock_clock_fonts_values"
         android:summary="%s"
-        android:defaultValue="32"
+        android:defaultValue="28"
         android:persistent="false" />
 
     <com.legion.settings.preferences.CustomSeekBarPreference
@@ -96,7 +96,7 @@
         android:max="25"
         settings:min="10"
         settings:units="dp"
-        android:defaultValue="18"
+        android:defaultValue="25"
         android:persistent="false" />
 
     <PreferenceCategory

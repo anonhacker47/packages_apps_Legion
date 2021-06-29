@@ -141,9 +141,9 @@ public class Themes extends DashboardFragment implements
 
         mBrightnessSliderStyle = (ListPreference) findPreference(BRIGHTNESS_SLIDER_STYLE);
         int BrightnessSliderStyle = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.BRIGHTNESS_SLIDER_STYLE, 0);
+                Settings.System.BRIGHTNESS_SLIDER_STYLE, 2);
         int BrightnessSliderStyleValue = getOverlayPosition(ThemesUtils.BRIGHTNESS_SLIDER_THEMES);
-        if (BrightnessSliderStyleValue != 0) {
+        if (BrightnessSliderStyleValue != 2) {
             mBrightnessSliderStyle.setValue(String.valueOf(BrightnessSliderStyle));
         }
         mBrightnessSliderStyle.setSummary(mBrightnessSliderStyle.getEntry());
@@ -189,9 +189,9 @@ public class Themes extends DashboardFragment implements
 
         mQsTileStyle = (ListPreference)findPreference(QS_TILE_STYLE);
         int qsTileStyle = Settings.System.getIntForUser(resolver,
-                Settings.System.QS_TILE_STYLE, 0, UserHandle.USER_CURRENT);
+                Settings.System.QS_TILE_STYLE, 15, UserHandle.USER_CURRENT);
         int valueIndex = mQsTileStyle.findIndexOfValue(String.valueOf(qsTileStyle));
-        mQsTileStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mQsTileStyle.setValueIndex(valueIndex >= 15 ? valueIndex : 15);
         mQsTileStyle.setSummary(mQsTileStyle.getEntry());
         mQsTileStyle.setOnPreferenceChangeListener(this);
 
@@ -398,8 +398,8 @@ public class Themes extends DashboardFragment implements
     private void getQsPanelAlphaPref() {
         mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.QS_PANEL_BG_ALPHA, 255);
-        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+                Settings.System.QS_PANEL_BG_ALPHA, 199);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 199) * 100));
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
